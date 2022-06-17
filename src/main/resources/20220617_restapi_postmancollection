@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "96c51c7c-287e-429d-b71f-8b0d7291d624",
+		"name": "GITHUB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Java-POC",
+			"item": [
+				{
+					"name": "GET BY ID Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/basic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"basic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET ALL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/basic",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"basic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "localhost:9000/basic",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"basic"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "localhost:9000/basic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"basic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"id\": 1\r\n}"
+						},
+						"url": {
+							"raw": "localhost:9000/basic/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"basic",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -14,12 +14,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.RequiredArgsConstructor;
+
 import br.com.caioalbuquerque.javapoc.domain.BasicResource;
 
+@RequiredArgsConstructor
 @RestController
-@RequestMapping("/basic")
-public class BasicController {
-
+@RequestMapping("/product")
+public class ProductController {
     @GetMapping(value = "/{id}")
     public String findById(@PathVariable("id") Long id) {
         return "Basic id: " + id;
